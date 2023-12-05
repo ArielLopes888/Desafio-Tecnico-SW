@@ -16,3 +16,6 @@ npm install
 ```sh
 npm run dev
 ```
+![Print Home](home.png)
+![](calculator.png)
+![](calculator2.png)
