@@ -8,6 +8,7 @@ import SidebarComponent from '../components/SidebarComponent.vue'
     <img src="../assets/starwars-logo.png" alt="Central Image" class="central-image">
     <div class="overlay">
       <p class="animated-paragraph">
+        EPISÓDIO I<br>
         AMEAÇA DO BUG<br>
         <br><br>
         A Comunidade de Desenvolvedores está<br>
@@ -55,9 +56,9 @@ h1 {
 }
 
 .animated-paragraph {
-  color: #fff;
+  color: #f1ba06;
   opacity: 0;
-  animation: slide-up 35s ease-in-out forwards;
+  animation: slide-up 45s ease-in-out forwards;
   text-align: center;
   width: 80%;
   margin: 0 auto;
