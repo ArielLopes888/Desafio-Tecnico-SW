@@ -68,7 +68,14 @@ export default {
 };
 </script>
   
-<style scoped>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: url('../assets/background2.jpg') center center/cover no-repeat; /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real da sua imagem */
+}
 .calculator-container {
     max-width: 600px;
     margin: auto;

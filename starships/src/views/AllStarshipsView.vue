@@ -30,7 +30,7 @@ export default {
   <SidebarComponent />
   <article class="centered-content">
     <table class="custom-table">
-      <thead style="color: black;">
+      <thead style="color: rgb(3, 3, 3);">
         <tr>
           <th>Starship</th>
           <th>MGLT</th>
@@ -39,7 +39,7 @@ export default {
           <th>Consumables</th>
         </tr>
       </thead>
-      <tbody style="color: black;">
+      <tbody style="color: rgba(226, 78, 78, 0.986);">
         <tr v-for="starship in allStarShips" :key="starship.name">
           <td>{{ starship.name }}</td>
           <td>{{ starship.MGLT }}</td>
@@ -60,17 +60,17 @@ export default {
 }
 
 .custom-table th, .custom-table td {
-  border: 1px solid #ddd;
+  border: 1px solid #302f2f;
   padding: 10px;
   text-align: left;
 }
 
 .custom-table th {
-  background-color: #f2f2f2;
+  background-color: #bd1919;
 }
 
 .custom-table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #f9f9f900;
 }
 
 h1 {
