@@ -68,14 +68,7 @@ export default {
 };
 </script>
   
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-  background: url('../assets/background2.jpg') center center/cover no-repeat; /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real da sua imagem */
-}
+<style scoped>
 .calculator-container {
     max-width: 600px;
     margin: auto;
@@ -84,6 +77,8 @@ body {
     background-color: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .input-container {
@@ -123,5 +118,4 @@ button:hover {
 .results-table th {
     background-color: #f2f2f2;
 }
-
 </style>

@@ -61,7 +61,7 @@ export default {
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #333;
+    background-color: #ffffff;
     margin-bottom: 4px;
 }
 

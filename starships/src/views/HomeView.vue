@@ -5,7 +5,6 @@ import SidebarComponent from '../components/SidebarComponent.vue'
 <template>
   <SidebarComponent />
   <div class="centered-content">
-    <h1 style="color: black;">HOME</h1>
     <img src="../assets/starwars-logo.png" alt="Central Image" class="central-image">
     <div class="overlay">
       <p class="animated-paragraph">

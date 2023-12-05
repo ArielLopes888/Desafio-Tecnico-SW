@@ -29,26 +29,28 @@ export default {
 <template>
   <SidebarComponent />
   <article class="centered-content">
-    <table class="custom-table">
-      <thead style="color: rgb(3, 3, 3);">
-        <tr>
-          <th>Starship</th>
-          <th>MGLT</th>
-          <th>Manufacturer</th>
-          <th>Passengers</th>
-          <th>Consumables</th>
-        </tr>
-      </thead>
-      <tbody style="color: rgba(226, 78, 78, 0.986);">
-        <tr v-for="starship in allStarShips" :key="starship.name">
-          <td>{{ starship.name }}</td>
-          <td>{{ starship.MGLT }}</td>
-          <td>{{ starship.manufacturer }}</td>
-          <td>{{ starship.passengers }}</td>
-          <td>{{ starship.consumables }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-container">
+      <table class="custom-table">
+        <thead style="color: rgb(3, 3, 3);">
+          <tr>
+            <th>Starship</th>
+            <th>MGLT</th>
+            <th>Manufacturer</th>
+            <th>Passengers</th>
+            <th>Consumables</th>
+          </tr>
+        </thead>
+        <tbody style="color: rgba(226, 78, 78, 0.986);">
+          <tr v-for="starship in allStarShips" :key="starship.name">
+            <td>{{ starship.name }}</td>
+            <td>{{ starship.MGLT }}</td>
+            <td>{{ starship.manufacturer }}</td>
+            <td>{{ starship.passengers }}</td>
+            <td>{{ starship.consumables }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </article>
 </template>
 
@@ -56,13 +58,13 @@ export default {
 .custom-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
 }
 
 .custom-table th, .custom-table td {
   border: 1px solid #302f2f;
   padding: 10px;
   text-align: left;
+  font-size: 0.9em;
 }
 
 .custom-table th {
@@ -73,13 +75,18 @@ export default {
   background-color: #f9f9f900;
 }
 
+.table-container {
+  max-height: 800px;
+  overflow: auto;
+}
+
 h1 {
   text-align: center;
 }
+
 .centered-content {
   display: flex;
   justify-content: center;
   height: 100vh;
 }
-
 </style>
