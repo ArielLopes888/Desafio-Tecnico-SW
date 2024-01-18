@@ -1,4 +1,4 @@
-### Devopness - Desafio técnico - Consumir dados dinamicamente via SW API (https://www.swapi.tech/ ou  https://swapi.dev/)
+### Devopness - Desafio técnico - Consumir dados dinamicamente via [SW API](https://swapi.dev/)
 ### Funcionalidade:
 Calcular quantas paradas serão necessárias para percorrer uma dada distância, com cada uma das espaçonaves listadas pela SW API
 ### Critérios de aceitação: 
